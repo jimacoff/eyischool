@@ -107,7 +107,7 @@ return [
     'key' => env('APP_KEY'),
 
     'cipher' => 'AES-256-CBC',
-
+     'log'=> 'errorlog',
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers
