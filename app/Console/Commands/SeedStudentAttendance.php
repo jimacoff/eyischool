@@ -155,7 +155,7 @@ class SeedStudentAttendance extends Command
             $pendingFile->save();
 
 
-            $dateTimeNow = Carbon::now(env('APP_TIMEZONE','West Africa'));
+            $dateTimeNow = Carbon::now(env('APP_TIMEZONE','Africa/Lagos'));
             $isFail = false;
 
             //pull shift running time
@@ -285,7 +285,7 @@ class SeedStudentAttendance extends Command
             //find absent students
             foreach ($presentStudentsByClass as $pDate => $stClasses){
                 $absentAttendances = [];
-                $dateTimeNow = Carbon::now(env('APP_TIMEZONE','Asia/Dhaka'));
+                $dateTimeNow = Carbon::now(env('APP_TIMEZONE','Africa/Lagos'));
 
                 foreach ($stClasses as $class_id => $academicYear){
                     $absentStudents = Registration::where('status', AppHelper::ACTIVE)
