@@ -18,12 +18,11 @@ mix.webpackConfig({
         // new webpack.IgnorePlugin(
         //     /^\.\/locale$/, /moment$/,
         // )
-        new webpack.ContextReplacementPlugin({
+        new webpack.ContextReplacementPlugin(
             // The path to directory which should be handled by this plugin
             /moment[\/\\]locale/,
             /select2[\/\\]dist[\/\\]js[\/\\]i18n/,
-        })
-    ],
+    ]
 });
 
 mix.js('resources/assets/backend/js/app.js', 'public/js')
