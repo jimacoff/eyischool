@@ -14,7 +14,7 @@ const webpack = require('webpack');
 
 mix.webpackConfig({
     plugins: [
-        new webpack.ContextReplacementPlugin(/moment[\/]locale/,/select2[\/]dist[\/]js[\/]i18n/)
+        new webpack.ContextReplacementPlugin(/moment[\/\\]locale/,/select2[\/\\]dist[\/\\]js[\/\\]i18n/)
     ]
 });
 
