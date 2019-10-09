@@ -20,8 +20,7 @@ mix.webpackConfig({
         // )
         new webpack.ContextReplacementPlugin(
             // The path to directory which should be handled by this plugin
-            /moment[\/\\]locale/,
-            /select2[\/\\]dist[\/\\]js[\/\\]i18n/)
+            /moment[\/\\]locale/, /select2[\/\\]dist[\/\\]js[\/\\]i18n/)
     ]
 });
 
