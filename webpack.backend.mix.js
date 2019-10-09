@@ -14,14 +14,7 @@ const webpack = require('webpack');
 
 mix.webpackConfig({
     plugins: [
-        // Ignore all locale files of moment.js
-        // new webpack.IgnorePlugin(
-        //     /^\.\/locale$/, /moment$/,
-        // )
-        new webpack.ContextReplacementPlugin(
-            // The path to directory which should be handled by this plugin
-            /moment[\/\\]locale/,
-            /select2[\/\\]dist[\/\\]js[\/\\]i18n/)
+        new webpack.ContextReplacementPlugin(/moment[\/]locale/,/select2[\/]dist[\/]js[\/]i18n/)
     ]
 });
 
