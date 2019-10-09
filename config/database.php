@@ -42,10 +42,10 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'db4free.net'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'eyitayos_home'),
-            'username' => env('DB_USERNAME', 'eyitayos_home'),
+            'database' => env('DB_DATABASE', 'home'),
+            'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'iW1eJ9)T-AqJ'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8',
